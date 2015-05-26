@@ -2,7 +2,7 @@
 layout: post
 title:  "The missing delete"
 date:   2015-05-25 23:25:23
-tags: c++ qt memory
+category: C++
 ---
 
 
@@ -30,20 +30,6 @@ In retrospect, the reasoning behind also implicitly passing the ownership of the
 
 My few hours spent on debugging this problem have had some positive though: a set of rules I apply for writing my own programs. For instance, any function taking a raw pointer is allowed to use and modify the object, but itself is responsible for releasing the memory. If this is not possible for some reason, I would use a smart pointer or, even better, a reference.
 
-
-<style>
-table{
-  border-collapse: collapse;
-  border-spacing: 0;
-  border:2px solid black;
-}
-th{
-  border:2px solid black;
-}
-td{
-  border:1px solid black;
-}
-</style>
 
 | Type                | Modify object   | Responsible for cleanup   |
 |:------------------- |:---------------:|:-------------------------:|
