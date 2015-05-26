@@ -2,8 +2,8 @@
  * Site header
  */
 .site-header {
-    border-top: 5px solid $grey-color-dark;
-    border-bottom: 1px solid $grey-color-light;
+    border-right: 1px solid $grey-color-light;
+    margin-right:5px;
     min-height: 56px;
 
     // Positioning context for the mobile navigation icon
@@ -11,8 +11,8 @@
 }
 
 .site-title {
-    font-size: 26px;
-    line-height: 56px;
+    font-size: 48px;
+    line-height: 80px;
     letter-spacing: -1px;
     margin-bottom: 0;
     float: left;

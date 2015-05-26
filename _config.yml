@@ -7,10 +7,14 @@ baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://gladdy.github.io" # the base hostname & protocol for your site
 
 name: Martijn Bakker
-twitter_username: jekyllrb
+#twitter_username: jekyllrb
 github_username:  gladdy
 facebook_username: martijn.bakker.737
 linkedin_link: martijn-bakker/93/462/731
+steam_url: "-GLaDOS-"
+steam_name: "TC Gladdyù"
 
 # Build settings
 markdown: kramdown
+highlighter: pygments
+excerpt_separator: ""
