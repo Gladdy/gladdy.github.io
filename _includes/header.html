@@ -13,9 +13,9 @@
   </nav>
 -->
 
-<img src="/images/gladdy.png" style="border-radius:10px;width:90%;margin:0px auto;">
+<img src="/images/gladdy.png" style="border-radius:10px;width:100%;margin-bottom:20px;">
 
-<p class="text">{{ site.description }}</p>
+<p class="text">{{ site.description }} <a class="text" href="{{ site.baseurl }}/about">more</a></p>
 
 <ul class="social-media-list">
   {% if site.github_username %}
@@ -40,12 +40,10 @@
           c1.685-0.158,3.542-2.049,5.178-2.771C61.468,10.947,63.271,10.588,65.709,10.5z"/>
         </svg>
       </span>
-
       <span class="username">{{ site.github_username }}</span>
     </a>
   </li>
   {% endif %}
-
   {% if site.twitter_username %}
   <li>
     <a href="https://twitter.com/{{ site.twitter_username }}">
@@ -63,12 +61,10 @@
           C414.973,206.142,393.023,203.486,381.384,198.639z"/>
         </svg>
       </span>
-
       <span class="username">{{ site.twitter_username }}</span>
     </a>
   </li>
   {% endif %}
-
   {% if site.facebook_username %}
   <li>
     <a href="https://facebook.com/{{ site.facebook_username }}">
@@ -83,7 +79,6 @@
     </a>
   </li>
   {% endif %}
-
   {% if site.linkedin_link %}
   <li>
     <a href="https://linkedin.com/pub/{{ site.linkedin_link }}">
@@ -103,7 +98,6 @@
     </a>
   </li>
   {% endif %}
-
   {% if site.steam_url %}
   <li>
     <a href="http://steamcommunity.com/id/{{ site.steam_url }}">
@@ -127,11 +121,6 @@
     </a>
   </li>
   {% endif %}
-
-  <li>
-    <br>
-  </li>
-
   {% if site.email %}
   <li>
     <a href="mailto:{{ site.email }}">
@@ -149,6 +138,15 @@
     </a>
   </li>
   {% endif %}
+</ul>
+
+
+<ul class="post-list">
+  {% for post in site.posts %}
+  <li>
+      <a class="text" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+  </li>
+  {% endfor %}
 </ul>
 
 </header>
