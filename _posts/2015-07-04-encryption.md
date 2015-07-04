@@ -12,8 +12,8 @@ category: Ideas
     * ~10 bytes for every group member
     * ~250bytes for an encrypted public key for multicast
     * ~250bytes for the signature (similar to SSL/TLS)
-* supports multiple recipients without sender data replication (sending the same data multiple times encoded with different public keys)
-* anonymous sources, data content (end-to-end encrypted, from point of view of the managing servers)
+* supports multiple recipients with minimal bandwidth overhead
+* anonymous message sources, unknown message content (as seen by the managing servers)
 * signed messages
 * only the endpoints know the group compositions, none of servers do
 
