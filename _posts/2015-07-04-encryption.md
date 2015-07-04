@@ -5,10 +5,9 @@ date:   2015-07-04 00:33:42
 category: Ideas
 ---
 
-
 ## Description for an end-to-end encrypted datagram service supporting multicast
 
-Features:
+### Features
 * low network overhead for the security offered
     * ~10 bytes for every group member
     * ~250bytes for an encrypted public key for multicast
@@ -46,13 +45,13 @@ Features:
 2. add yourself to your local recipient list, which contains the ids and public keys of each member
 
 #### Adding a user
-##### The user already in the group
+The user already in the group
 1. prompt for a target id to add to the group
 2. prompt for a passphrase
 3. encode the group key pair and recipient list with the passphrase
 4. send the message to the target id
 
-##### The user being added
+The user being added
 1. Sees that he has received a message for which none of his private keys work
 2. prompt for a passphrase
 3. if it works, add the recipient list and private key to its cache
@@ -83,25 +82,25 @@ Features:
 9. T verifies whether the signature is correct and passes on the message to the receiving application
 
 ### Who knows what?
-##### S
+#### S
 * Message contents
 * All recipients
 * Message signature
 * Choice of P1 and P2
 
-##### P1
+#### P1
 * S
 * Choice of P1 and P2
 
-##### P2
+#### P2
 * Choice of P1 and P2
 * Group public key
 
-##### CS
+#### CS
 * Choice of P2
 * A single recipient
 
-##### T
+#### T
 * Message contents
 * Message origin
 * Message signature
