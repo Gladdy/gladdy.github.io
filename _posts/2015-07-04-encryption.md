@@ -12,10 +12,10 @@ category: Ideas
     * ~10 bytes for every group member
     * ~250bytes for an encrypted public key for multicast
     * ~250bytes for the signature (similar to SSL/TLS)
-* supports multiple recipients without sender data replication
-* anonymous data content (end-to-end encrypted)
-* anonymous senders
-* only the endpoints know the group compositions, none of the central servers or proxies do
+* supports multiple recipients without sender data replication (sending the same data multiple times encoded with different public keys)
+* anonymous sources, data content (end-to-end encrypted, from point of view of the managing servers)
+* signed messages
+* only the endpoints know the group compositions, none of servers do
 
 ### Introduction
 
@@ -122,3 +122,4 @@ category: Ideas
     * Their input and output content at P2 is entirely scrambled and combined with a high traffic level and a short, randomized wait, this prevents traffic flow analysis.
 * If you have control over all servers you can trace the path of the packet
     * Indeed. As long as not all the servers get hijacked the system is still anonymous though and due to the random choice of P1 and P2.
+    * The content of the packet will always remain unknown to the hijackers due to the end-to-end encryption.
