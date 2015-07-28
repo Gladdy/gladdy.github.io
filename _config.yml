@@ -1,13 +1,12 @@
 # Site settings
 title: Prostendo
 email: gladdyu@gmail.com
-description: > # this means to ignore newlines until "baseurl:"
+description: > #
   Some description. pretty nifty this jekyll stuff.
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://gladdy.github.io" # the base hostname & protocol for your site
 
 name: Martijn Bakker
-#twitter_username: jekyllrb
 github_username:  gladdy
 facebook_username: martijn.bakker.737
 linkedin_link: martijn-bakker/93/462/731
@@ -18,3 +17,8 @@ steam_name: "TC Gladdyù"
 markdown: kramdown
 highlighter: pygments
 excerpt_separator: ""
+
+collections:
+  projects:
+    output: true
+    permalink: /projects/:path/
