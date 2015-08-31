@@ -1,8 +1,7 @@
 # Site settings
 title: Prostendo
 email: gladdyu@gmail.com
-description: > #
-  Some description. pretty nifty this jekyll stuff.
+description: For me to show
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://gladdy.github.io" # the base hostname & protocol for your site
 

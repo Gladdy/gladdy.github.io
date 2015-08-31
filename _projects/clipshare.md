@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "ClipShare"
-category:  C++
+title:  "Clipshare"
+imgurl: "https://upload.wikimedia.org/wikipedia/en/5/57/OpenCL_Logo.png"
 ---
 
 Somethign somethign text

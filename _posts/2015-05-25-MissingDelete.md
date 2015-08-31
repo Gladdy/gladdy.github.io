@@ -27,16 +27,3 @@ However, in this case you are not just passing the pointer for the new content o
 We're only left with `new`. The corresponding `delete` is nowhere to be found in our code. Its instruction will be buried somewhere deep inside some compiled library binary, never to be seen again by people: just a few bytes in a sea of apparent pseudo-randomness, making sure that your computer does not crash if you have placed things on the clipboard too many times. Thank you bytes.
 
 In retrospect, the reasoning behind also implicitly passing the ownership of the data and thereby the responsibility to delete it is completely sound: Only the operating system is able to keep track of whenever the clipboard and thereby its mimeData object have been reassigned. In current machines with huge surplusses of memory reallocating is not that efficient anymore: deleting the old object and just allocating a new one. Therefore there is no way to know for the application where the clipboard object has gone and as such it will not be able to clean up after itself.
-
-My few hours spent on debugging this problem have had some positive though: a set of rules I apply for writing my own programs. For instance, any function taking a raw pointer is allowed to use and modify the object, but itself is responsible for releasing the memory. If this is not possible for some reason, I would use a smart pointer or, even better, a reference.
-
-
-| Type                | Modify object   | Responsible for cleanup   |
-|:------------------- |:---------------:|:-------------------------:|
-| Raw pointer         |       x         |            x
-| Shared pointer      |       x*        |
-| Reference           |       x         |
-| Unique pointer      |       x         |
-| Constant reference  |                 |
-
-\* only with proper synchronization if necessary

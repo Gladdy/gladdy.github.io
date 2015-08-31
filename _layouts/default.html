@@ -2,20 +2,24 @@
 <html>
 {% include head.html %}
   <body>
-    <div class="container pull-left">
+
+    <div class="container">
       <div class="row">
-        <div class="col-sm-3">
+
+        <header class="col-sm-3">
           {% include header.html %}
-        </div>
+        </header>
 
         <div class="col-sm-9">
             {{ content }}
         </div>
-      </div>
-      <div class="row">
-        {% include footer.html %}
+
       </div>
     </div>
+
+    <footer class="site-footer" style="text-align:center;">
+      © Martijn Bakker 2015
+    </footer>
   </body>
 
   <script>
