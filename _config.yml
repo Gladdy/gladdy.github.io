@@ -21,3 +21,6 @@ collections:
   projects:
     output: true
     permalink: /projects/:path/
+  logs:
+    output: true
+    permalink: /logs/:path/
