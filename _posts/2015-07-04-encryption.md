@@ -2,7 +2,8 @@
 layout: post
 title:  "End-to-end encrypted messaging"
 date:   2015-07-04 00:33:42
-category: Ideas
+tags: Encryption
+abstract: "Some ideas on encryption schemes" 
 ---
 
 ## Description for an end-to-end encrypted datagram service supporting multicast

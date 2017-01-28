@@ -2,28 +2,25 @@
 layout: default
 ---
 
-<h2>Mission: 10x</h2>
+{% for post in site.posts %}
+  {% if post.url%}
+    <div class="post-entry">
+      <h3>
+        <a href="{{ post.url }}">{{ post.title }}</a> -
+        <span class="post-meta">({{ post.date | date: "%b %-d, %Y" }})</span>
+      </h3>
 
-<p>
-  I enjoy building things. I really enjoy solving problems.
-</p>
+      <p>
+      {% for tag in post.tags %}
+        <span class="rounded-bubble">
+          {{ tag | downcase }}
+        </span>
+      {% endfor %}
+      </p>
 
-<p>
-  Starting out with fixing bicycle bells at age 4 to building a fully functional, remote-controlled sailboat from scratch at age 13 <a href="http://s278.photobucket.com/user/Martijn95/Lelievlet/story">(click)</a> I've always been building things. Even though just aimlessly building things is great, I realized that it is much more fun to build things that solve real problems, which are experienced by actual people and have a significant impact.
-</p>
-
-<p>
-  The advent of digital technology and the Internet has reduced the entry barrier for the creation of impactful solutions to next to nothing. It has never been easier to develop a website that can be used by thousands of people. However, each and every problem encountered may require a different approach which is 10x better than the others.
-</p>
-
-<p>
-  It is my quest to find those 10x solutions.
-  <br>
-  #Prosperity through technology
-</p>
-
-
-<h2>About</h2>
-<p>
-  I'm currently studying Advanced Computer Science at the University of Cambridge. In my spare time, when I'm not busy solving problems, I enjoy 3D modelling, animation and playing the bassoon.
-</p>
+      <p>
+      {{ post.abstract }}
+      <p>
+    </div>
+  {% endif %}
+{% endfor %}

@@ -2,7 +2,8 @@
 layout: post
 title:  "The missing delete"
 date:   2015-05-25 23:25:23
-category: C++
+tags: C++ test
+abstract: "A lession learnt in how transfering memory ownership can be implicit" 
 ---
 
 

@@ -2,7 +2,8 @@
 layout: post
 title:  "FPGAs?"
 date:   2015-05-26 14:54:32
-category: Hardware
+tags: Hardware VHDL
+abstract: "Apparently HDLs aren't very terse" 
 ---
 
 ### VHDL: hardware design could be more streamlined!
