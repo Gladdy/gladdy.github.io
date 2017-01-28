@@ -3,7 +3,7 @@ title: Prostendo
 email: gladdyu@gmail.com
 description: For me to show
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://gladdy.github.io" # the base hostname & protocol for your site
+url: "https://gladdy.github.io" # the base hostname & protocol for your site
 
 name: Martijn Bakker
 github_username:  gladdy
