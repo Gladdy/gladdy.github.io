@@ -250,6 +250,7 @@
 ul.share-buttons{
   list-style: none;
   padding: 0;
+  margin-left:0px;
 }
 
 ul.share-buttons li{
@@ -268,5 +269,10 @@ ul.share-buttons .sr-only {
 }
 
 ul.share-buttons img{
-  width: 32px;
+  width: 25px;
+}
+
+.smaller-img {
+    width:20px;
+    height:20px;
 }
