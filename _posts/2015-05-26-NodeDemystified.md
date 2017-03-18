@@ -2,7 +2,7 @@
 layout: post
 title:  "Demystifying Node.js"
 date:   2015-07-26 21:10:32
-tags: C++ Node.js
+tags: C++ node.js
 abstract: "Implementing the semantics of Node.js - with the speed of C++" 
 ---
 

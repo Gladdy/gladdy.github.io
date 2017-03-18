@@ -2,7 +2,7 @@
 layout: post
 title:  "FPGAs?"
 date:   2015-05-26 14:54:32
-tags: Hardware VHDL
+tags: VHDL hardware
 abstract: "Apparently HDLs aren't very terse" 
 ---
 
