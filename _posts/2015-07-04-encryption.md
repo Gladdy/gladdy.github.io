@@ -3,6 +3,7 @@ layout: post
 title:  "End-to-end encrypted messaging"
 date:   2015-07-04 00:33:42
 tags: encryption
+categories: thoughts
 abstract: "Some ideas on encryption schemes" 
 ---
 

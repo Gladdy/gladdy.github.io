@@ -2,8 +2,9 @@
 layout: post
 title:  "Demystifying Node.js"
 date:   2015-07-26 21:10:32
-tags: C++ node.js
+tags: cpp nodejs
 abstract: "Implementing the semantics of Node.js - with the speed of C++" 
+categories: code
 ---
 
 Node.js: it's quick to write, easy to understand and performs very well in applications which are I/O bound for performance. The high level of abstraction offered by Node.js also has a disadvantage. Without looking at the C source code, which is something I cannot imagine many Node.js developers will do, the inner workings can appear to be almost magic. Node.js handles all the nitty-gritty low-level stuff for you: ensuring that the proper callbacks are executed at the proper time with proper values for the variables. This is great and all, but if the server application has to perform actual computation the performance suffers due to the interpreted and dynamic nature of JavaScript. The usual choice is to write the high-performance part a different language which can be compiled to an object file (C/C++) and then add the compiled program as an addon, a process which is documented [here](https://nodejs.org/api/addons.html).

@@ -3,12 +3,15 @@ layout: post
 title: Context switching on an AVR
 date:   2017-01-27 14:50:19
 abstract: "Implementation and testing of a context switcher for an AVR microcontroller"
-tags: C hardware AVR
+tags: c hardware avr 
+categories: code
 ---
 
 Modern operating systems are run on are complicated beasts. They consist of millions of lines of code, providing a wide range of functionality. At the core of these tasks is the 'kernel'. This core section of the operating system has a single goal: providing a machine-independent abstraction of the hardware. The rest of the operating system and other applications can then be built on top of the kernel to use this interface, meaning that applications should run correctly on every machine type supported by the operating system kernel.
 
-{% include image.html url="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Kernel_Layout.svg/220px-Kernel_Layout.svg.png" description="Applications run on top of the kernel, which abstracts away the underlying hardware." %}
+<a href="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Kernel_Layout.svg/220px-Kernel_Layout.svg.png" data-lightbox="kernel-large" data-title="Applications run on top of the kernel, which abstracts away the underlying hardware.">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Kernel_Layout.svg/220px-Kernel_Layout.svg.png" title="Applications run on top of the kernel, which abstracts away the underlying hardware.">
+</a>
 
 When using a computer, the functionality of the kernel is hidden away as much as possible - it's merely there to provide services to applications. However, in order to really understand what the kernel does (or could be doing), it can be useful to implement a kernel for yourself.
 

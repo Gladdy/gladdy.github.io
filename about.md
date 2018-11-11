@@ -25,4 +25,3 @@ permalink: /about/
   I'm currently studying Advanced Computer Science at the University of Cambridge. In my spare time, when I'm not busy solving problems, I enjoy 3D modelling, animation and playing the bassoon.
 </p>
 
-<div>Icon made by <a href="http://www.simpleicon.com" title="SimpleIcon">SimpleIcon</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> is licensed under <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0">CC BY 3.0</a></div>

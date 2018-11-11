@@ -2,22 +2,21 @@
 layout: post
 title:  "The missing delete"
 date:   2015-05-25 23:25:23
-tags: C++
+tags: cpp
+categories: code 
 abstract: "A lession learnt in how transfering memory ownership can be implicit" 
 ---
 
 
 {% highlight C++ %}
 void ClipShareRunner::readFromSocket(QString str) {
-    updatingClipboard = true;
-
-    QMimeData * mimeData = new QMimeData();
-    /*
-      Process QString str and add to the information to the QMimeData object.
-     */
-    QApplication::clipboard()->setMimeData(mimeData);
-
-    updatingClipboard = false;
+updatingClipboard = true;
+QMimeData * mimeData = new QMimeData();
+/*
+Process QString str and add to the information to the QMimeData object.
+*/
+QApplication::clipboard()->setMimeData(mimeData);
+updatingClipboard = false;
 }
 {% endhighlight %}
 
