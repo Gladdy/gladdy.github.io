@@ -3,7 +3,6 @@ layout: post
 title: Setting up the Altera Quartus JTAG Programmer on Ubuntu 16.04
 date:   2017-03-18 21:40:19
 abstract: ""
-categories: code
 tags: fpga hardware altera
 ---
 
